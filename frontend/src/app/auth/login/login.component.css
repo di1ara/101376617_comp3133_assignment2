@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #3D0301; 
+  }
+  
+  .card {
+    background-color: #EBE8DB; 
+    color: #3D0301; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  h3 {
+    color: #B03052;
+  }
+  
+  .form-label {
+    color: #3D0301;
+  }
+  
+  .form-control {
+    border-color: #D76C82; 
+    color: #3D0301; 
+  }
+  
+  .form-control:focus {
+    border-color: #B03052;
+    box-shadow: 0 0 0 0.2rem rgba(176, 48, 82, 0.25);
+  }
+  
+  button {
+    background-color: #D76C82; 
+    color: #EBE8DB; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #B03052; 
+  }
+  
+  .alert-danger {
+    background-color: #B03052; 
+    color: #EBE8DB; 
+    border-radius: 5px;
+  }
+  
