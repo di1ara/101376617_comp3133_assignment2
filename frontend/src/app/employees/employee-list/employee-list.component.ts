@@ -11,6 +11,7 @@ import { filter } from 'rxjs/operators';
   standalone: true,
   selector: 'app-employee-list',
   templateUrl: './employee-list.component.html',
+  styleUrl: './employee-list.component.css',
   imports: [CommonModule, NgIf, NgFor, FormsModule, NavbarComponent],
 })
 export class EmployeeListComponent implements OnInit {

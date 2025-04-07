@@ -1,0 +1,97 @@
+/* Main page container */
+.container {
+    padding: 40px;
+}
+
+/* Card container */
+.card {
+    background-color: #2a2a2a; /* Dark background for the card */
+    color: #EBE8DB;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Card title */
+.card-title {
+    color: #EBE8DB;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Labels */
+label {
+    color: #EBE8DB;
+    font-weight: 500;
+}
+
+/* Input & Select fields */
+.form-control {
+    background-color: #2a2a2a;
+    color: #EBE8DB;
+    border: 1px solid #444;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Placeholder text */
+.form-control::placeholder {
+    color: #c4c0b4;
+}
+
+/* Focused input field */
+.form-control:focus {
+    border-color: #B03052;
+    box-shadow: 0 0 0 0.2rem rgba(176, 48, 82, 0.3);
+    background-color: #2a2a2a;
+    color: #EBE8DB;
+}
+
+/* Error text */
+.text-danger {
+    color: #D76C82 !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #B03052;
+    border-color: #B03052;
+    color: #EBE8DB;
+}
+
+.btn-primary:hover {
+    background-color: #D76C82;
+    border-color: #D76C82;
+    color: #1b1b1b;
+}
+
+.btn-secondary {
+    background-color: #444;
+    border-color: #555;
+    color: #EBE8DB;
+}
+
+.btn-secondary:hover {
+    background-color: #666;
+    border-color: #777;
+    color: #EBE8DB;
+}
+
+/* Image Preview */
+.img-thumbnail {
+    background-color: #1b1b1b;
+    border: 1px solid #444;
+    border-radius: 8px;
+    max-height: 150px;
+    margin-top: 0.5rem;
+}
+
+/* General spacing + transitions */
+.form-group,
+.mb-3 {
+    transition: all 0.3s ease;
+}
+
+button {
+    transition: all 0.3s ease;
+}

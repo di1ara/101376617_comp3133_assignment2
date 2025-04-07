@@ -9,6 +9,7 @@ import { NavbarComponent } from '../../shared/navbar/navbar.component';
   standalone: true,
   selector: 'app-employee-edit',
   templateUrl: './employee-edit.component.html',
+  styleUrl: './employee-edit.component.css',
   imports: [CommonModule, ReactiveFormsModule, NavbarComponent],
 })
 export class EmployeeEditComponent implements OnInit {

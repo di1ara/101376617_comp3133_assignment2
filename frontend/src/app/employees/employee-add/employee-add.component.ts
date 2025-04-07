@@ -9,6 +9,7 @@ import { NavbarComponent } from '../../shared/navbar/navbar.component';
   standalone: true,
   selector: 'app-employee-add',
   templateUrl: './employee-add.component.html',
+  styleUrl: './employee-add.component.css',
   imports: [CommonModule, ReactiveFormsModule, NavbarComponent],
 })
 export class EmployeeAddComponent {

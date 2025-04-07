@@ -1,0 +1,125 @@
+h2 {
+    color: #EBE8DB;
+    text-align: center; /* Center the title */
+  }
+  
+  /* Add Employee Button */
+  .btn-success {
+    background-color: #B03052;
+    border-color: #B03052;
+  }
+  
+  .btn-success:hover {
+    background-color: #D76C82;
+    border-color: #D76C82;
+  }
+  
+  /* Search Input */
+  input.form-control {
+    background-color: #2a2a2a;
+    border: 1px solid #555;
+    color: #EBE8DB;
+  }
+  
+  input.form-control:focus {
+    border-color: #B03052;
+    box-shadow: 0 0 0 0.2rem rgba(176, 48, 82, 0.25);
+    background-color: #2a2a2a;
+    color: #EBE8DB;
+  }
+  
+  input.form-control::placeholder {
+    color: #B0B0B0;
+  }
+  
+  /* Table */
+  .table {
+    background-color: #1b1b1b;
+    color: #EBE8DB;
+    border-color: #555;
+  }
+  
+  .table th {
+    background-color: #2a2a2a;
+    color: #EBE8DB;
+  }
+  
+  .table td {
+    background-color: #1b1b1b;
+    vertical-align: middle;
+    color: #D1D1D1;
+  }
+  
+  .table-bordered > :not(caption) > * > * {
+    border-color: #555;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #B03052;
+    border-color: #B03052;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #D76C82;
+    border-color: #D76C82;
+  }
+  
+  .btn-warning {
+    background-color: #D76C82;
+    border-color: #D76C82;
+    color: #fff;
+  }
+  
+  .btn-warning:hover {
+    background-color: #b84a65;
+    border-color: #b84a65;
+  }
+  
+  .btn-danger {
+    background-color: #7a1f27;
+    border-color: #7a1f27;
+  }
+  
+  .btn-danger:hover {
+    background-color: #a12837;
+    border-color: #a12837;
+  }
+  
+  /* Message */
+  .text-danger {
+    color: #D76C82;
+  }
+  
+  /* Empty state */
+  .table td.text-center {
+    color: #aaa;
+  }
+  
+  /* Adjustments for aligning content */
+  .d-flex {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
+  }
+  
+  .d-flex.flex-column {
+    flex-direction: column; /* Stack the items vertically */
+  }
+  
+  .d-flex .form-control {
+    max-width: 300px;
+  }
+  
+  /* The Search input is aligned to the right */
+  .d-flex.justify-content-end {
+    justify-content: flex-end; /* Align the search input to the right */
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .d-flex button {
+    margin-right: 15px;
+  }
+  

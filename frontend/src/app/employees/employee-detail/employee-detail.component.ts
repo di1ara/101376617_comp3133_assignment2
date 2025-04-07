@@ -8,6 +8,7 @@ import { NavbarComponent } from '../../shared/navbar/navbar.component';
   standalone: true,
   selector: 'app-employee-detail',
   templateUrl: './employee-detail.component.html',
+  styleUrl:  './employee-detail.component.css',
   imports: [CommonModule, NavbarComponent],
 })
 export class EmployeeDetailComponent implements OnInit {
