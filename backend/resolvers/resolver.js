@@ -57,15 +57,28 @@ const resolvers = {
     // Signup Mutation
     signup: async (_, { username, email, password }) => {
       try {
-        const existingUser = await User.findOne({ email });
-        if (existingUser) {
+        // Check if the username already exists
+        const existingUserByUsername = await User.findOne({ username });
+        if (existingUserByUsername) {
+          throw new Error("Username already in use. Please choose a different username.");
+        }
+    
+        // Check if the email already exists
+        const existingUserByEmail = await User.findOne({ email });
+        if (existingUserByEmail) {
           throw new Error("Email already in use. Please login or use another email.");
         }
-
+    
+        // Hash the password before saving it
         const hashedPassword = await bcrypt.hash(password, 10);
-        const newUser = new User({ username, email, password: hashedPassword });
-
+        const newUser = new User({
+          username,
+          email,
+          password: hashedPassword,
+        });
+    
         await newUser.save();
+        
         return {
           id: newUser.id,
           username: newUser.username,
@@ -73,9 +86,16 @@ const resolvers = {
           message: "Signup successful! Please login.",
         };
       } catch (error) {
-        throw new Error(error.message);
+        // Check for duplicate key errors and provide a clearer message
+        if (error.code === 11000) {
+          const duplicatedField = Object.keys(error.keyValue)[0]; // Get the field that caused the error
+          throw new Error(`${duplicatedField.charAt(0).toUpperCase() + duplicatedField.slice(1)} already exists. Please use a different ${duplicatedField}.`);
+        }
+        
+        throw new Error("An unexpected error occurred during signup. Please try again later.");
       }
     },
+    
 
     // Login Mutation
     login: async (_, { email, password }) => {
@@ -144,13 +164,10 @@ const resolvers = {
       try {
         const deletedEmployee = await Employee.findByIdAndDelete(eid);
         if (deletedEmployee) {
-          return {
-            id: deletedEmployee._id.toString(),
-            ...deletedEmployee._doc,
-            date_of_joining: new Date(deletedEmployee.date_of_joining).toISOString().split('T')[0], 
-          };
+          // Return a success message or just the employee id
+          return `Employee with ID ${eid} has been deleted successfully.`;
         }
-        return null;
+        return `No employee found with ID ${eid}.`;
       } catch (error) {
         throw new Error("Error deleting employee: " + error.message);
       }

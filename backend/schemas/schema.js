@@ -51,9 +51,3 @@ const typeDefs = gql`
 `;
 
 module.exports = typeDefs;
-
-/*
-I defined a User type and two mutations:
- signup(username, email, password): Creates a new user.
- login(email, password): Logs in an existing user and returns a token.
- */
