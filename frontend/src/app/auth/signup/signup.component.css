@@ -1,0 +1,91 @@
+/* Fullscreen deep dark background */
+.container {
+    background-color: #3D0301;
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: #1b1b1b;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    color: #EBE8DB;
+  }
+  
+  /* Heading */
+  .card h3 {
+    color: #EBE8DB;
+    font-weight: 600;
+  }
+  
+  /* Labels */
+  .form-label {
+    color: #EBE8DB;
+  }
+  
+  /* Input Fields */
+  .form-control {
+    background-color: #2b2b2b;
+    color: #EBE8DB;
+    border: 1px solid #444;
+    border-radius: 6px;
+  }
+  
+  .form-control::placeholder {
+    color: #c4c0b4;
+  }
+  
+  .form-control:focus {
+    background-color: #2b2b2b;
+    border-color: #B03052;
+    box-shadow: 0 0 0 0.2rem rgba(176, 48, 82, 0.3);
+    color: #EBE8DB;
+  }
+  
+  /* Error & Success Messages */
+  .text-danger small {
+    color: #D76C82;
+  }
+  
+  .alert-danger {
+    background-color: #5a1e26;
+    border-color: #D76C82;
+    color: #D76C82;
+  }
+  
+  .alert-success {
+    background-color: #1d3d03;
+    border-color: #8bc34a;
+    color: #c8e6c9;
+  }
+  
+  /* Submit Button (styled with your palette) */
+  .btn-success {
+    background-color: #B03052;
+    border-color: #B03052;
+    color: #EBE8DB;
+  }
+  
+  .btn-success:hover {
+    background-color: #D76C82;
+    border-color: #D76C82;
+    color: #1b1b1b;
+  }
+  
+  /* Login Link */
+  a {
+    color: #D76C82;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #EBE8DB;
+    text-decoration: underline;
+  }
+  
+  /* Smooth transitions */
+  .form-control,
+  .btn,
+  .card {
+    transition: all 0.3s ease;
+  }
+  

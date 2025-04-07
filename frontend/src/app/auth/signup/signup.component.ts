@@ -8,6 +8,7 @@ import { AuthService } from '../../services/auth.service';
   standalone: true,
   selector: 'app-signup',
   templateUrl: './signup.component.html',
+  styleUrl:  './signup.component.css',
   imports: [CommonModule, ReactiveFormsModule, RouterLink],
 })
 export class SignupComponent {

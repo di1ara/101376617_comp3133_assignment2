@@ -1,55 +1,85 @@
+/* Fullscreen dark background */
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    background-color: #3D0301; 
-  }
-  
-  .card {
-    background-color: #EBE8DB; 
-    color: #3D0301; 
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-  }
-  
-  h3 {
-    color: #B03052;
-  }
-  
-  .form-label {
-    color: #3D0301;
-  }
-  
-  .form-control {
-    border-color: #D76C82; 
-    color: #3D0301; 
-  }
-  
-  .form-control:focus {
-    border-color: #B03052;
-    box-shadow: 0 0 0 0.2rem rgba(176, 48, 82, 0.25);
-  }
-  
-  button {
-    background-color: #D76C82; 
-    color: #EBE8DB; 
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  button:disabled {
-    background-color: #B03052; 
-  }
-  
-  .alert-danger {
-    background-color: #B03052; 
-    color: #EBE8DB; 
-    border-radius: 5px;
-  }
-  
+  background-color: #3D0301; /* very dark red-black */
+}
+
+/* Card styling */
+.card {
+  background-color: #1b1b1b; /* deep gray */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  color: #EBE8DB; /* soft cream text */
+}
+
+/* Heading */
+.card h3 {
+  color: #EBE8DB;
+  font-weight: 600;
+}
+
+/* Labels */
+.form-label {
+  color: #EBE8DB;
+}
+
+/* Input Fields */
+.form-control {
+  background-color: #2b2b2b;
+  color: #EBE8DB;
+  border: 1px solid #444;
+  border-radius: 6px;
+}
+
+.form-control::placeholder {
+  color: #c4c0b4; /* lighter cream for hint text */
+}
+
+.form-control:focus {
+  background-color: #2b2b2b;
+  border-color: #B03052; /* burgundy */
+  box-shadow: 0 0 0 0.2rem rgba(176, 48, 82, 0.3);
+  color: #EBE8DB;
+}
+
+/* Error messages */
+.text-danger small {
+  color: #D76C82;
+}
+
+/* Error alert */
+.alert-danger {
+  background-color: #5a1e26;
+  border-color: #D76C82;
+  color: #D76C82;
+}
+
+/* Submit Button */
+.btn-primary {
+  background-color: #B03052;
+  border-color: #B03052;
+  color: #EBE8DB;
+}
+
+.btn-primary:hover {
+  background-color: #D76C82;
+  border-color: #D76C82;
+  color: #1b1b1b;
+}
+
+/* Signup Link */
+a {
+  color: #D76C82;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EBE8DB;
+  text-decoration: underline;
+}
+.form-control, .btn {
+  transition: all 0.3s ease;
+}
+
+.card {
+  transition: background-color 0.3s ease;
+}
